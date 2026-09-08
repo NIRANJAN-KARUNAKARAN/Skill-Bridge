@@ -1,0 +1,10 @@
+- job_id
+- job_title
+- company
+- country
+- job_description
+- salary
+- currency
+- experience
+- posting_date
+- source
