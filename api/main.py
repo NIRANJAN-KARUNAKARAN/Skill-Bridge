@@ -1,69 +1,172 @@
-from typing import Optional
+from fastapi import FastAPI
+from pydantic import BaseModel
 
-from fastapi import Depends, FastAPI, HTTPException, Query
-from sqlalchemy import or_
-from sqlalchemy.orm import Session, joinedload
-
-from database import get_db
-from models import Country, Job
-from schemas import JobListOut, JobOut
-
-app = FastAPI(
-    title="SkillBridge API",
-    description="India vs Malaysia Job-Market & Skill-Gap Platform — prototype API",
-    version="0.1.0",
-)
+app = FastAPI(title="India-Malaysia Skill Bridge API")
 
 
-@app.get("/", tags=["meta"])
-def root():
-    return {"status": "ok", "service": "SkillBridge API"}
+# -------------------------
+# Sample Job Data
+# -------------------------
+
+jobs = [
+    {
+        "id": 1,
+        "country": "Malaysia",
+        "job_title": "Software Engineer",
+        "company": "Tech Malaysia",
+        "skills": ["Python", "SQL", "Git", "REST API"]
+    },
+    {
+        "id": 2,
+        "country": "Malaysia",
+        "job_title": "Data Analyst",
+        "company": "Data Solutions MY",
+        "skills": ["Python", "SQL", "Excel", "Power BI"]
+    },
+    {
+        "id": 3,
+        "country": "India",
+        "job_title": "Software Developer",
+        "company": "Tech India",
+        "skills": ["Python", "Java", "SQL", "Git"]
+    },
+    {
+        "id": 4,
+        "country": "India",
+        "job_title": "Data Scientist",
+        "company": "Analytics India",
+        "skills": ["Python", "Machine Learning", "SQL", "Pandas"]
+    }
+]
 
 
-@app.get("/jobs", response_model=JobListOut, tags=["jobs"])
-def list_jobs(
-    country: Optional[str] = Query(None, description="e.g. Malaysia, India"),
-    role: Optional[str] = Query(None, description="matches against job title"),
-    category: Optional[str] = Query(None),
-    min_salary: Optional[float] = Query(None, description="filter by salary_min >="),
-    limit: int = Query(20, ge=1, le=200),
-    offset: int = Query(0, ge=0),
-    db: Session = Depends(get_db),
-):
-    q = db.query(Job).options(joinedload(Job.country), joinedload(Job.source))
+# -------------------------
+# Request Model
+# -------------------------
 
-    if country:
-        q = q.join(Country).filter(Country.country_name.ilike(country))
-    if role:
-        q = q.filter(
-            or_(
-                Job.original_title.ilike(f"%{role}%"),
-                Job.normalized_title.ilike(f"%{role}%"),
-            )
-        )
-    if category:
-        q = q.filter(Job.category.ilike(f"%{category}%"))
-    if min_salary is not None:
-        q = q.filter(Job.salary_min >= min_salary)
-
-    total = q.count()
-    rows = q.offset(offset).limit(limit).all()
-
-    return JobListOut(
-        total=total,
-        count=len(rows),
-        results=[_to_job_out(r) for r in rows],
-    )
+class JobInput(BaseModel):
+    country: str
+    job_title: str
+    job_description: str
 
 
-@app.get("/jobs/{job_pk}", response_model=JobOut, tags=["jobs"])
-def get_job(job_pk: int, db: Session = Depends(get_db)):
-    job = db.query(Job).filter(Job.id == job_pk).first()
-    if not job:
-        raise HTTPException(status_code=404, detail="Job not found")
-    return _to_job_out(job)
+# -------------------------
+# Home API
+# -------------------------
+
+@app.get("/")
+def home():
+    return {
+        "message": "India-Malaysia Skill Bridge API is running"
+    }
 
 
-def _to_job_out(job: Job) -> JobOut:
-    data = JobOut.model_validate(job)
-    return data
+# -------------------------
+# Get all jobs
+# -------------------------
+
+@app.get("/jobs")
+def get_jobs():
+    return jobs
+
+
+# -------------------------
+# Search by country
+# -------------------------
+
+@app.get("/jobs/country/{country}")
+def jobs_by_country(country: str):
+
+    result = [
+        job for job in jobs
+        if job["country"].lower() == country.lower()
+    ]
+
+    return {
+        "country": country,
+        "count": len(result),
+        "jobs": result
+    }
+
+
+# -------------------------
+# Search by skill
+# -------------------------
+
+@app.get("/jobs/skill/{skill}")
+def jobs_by_skill(skill: str):
+
+    result = []
+
+    for job in jobs:
+        if any(skill.lower() == s.lower() for s in job["skills"]):
+            result.append(job)
+
+    return {
+        "skill": skill,
+        "count": len(result),
+        "jobs": result
+    }
+
+
+# -------------------------
+# Extract skills from job
+# -------------------------
+
+@app.post("/extract-skills")
+def extract_skills(job: JobInput):
+
+    skill_database = [
+        "Python",
+        "Java",
+        "C++",
+        "SQL",
+        "Git",
+        "REST API",
+        "Excel",
+        "Power BI",
+        "Machine Learning",
+        "Pandas",
+        "HTML",
+        "CSS",
+        "JavaScript"
+    ]
+
+    description = job.job_description.lower()
+
+    detected_skills = []
+
+    for skill in skill_database:
+        if skill.lower() in description:
+            detected_skills.append(skill)
+
+    return {
+        "country": job.country,
+        "job_title": job.job_title,
+        "skills": detected_skills
+    }
+
+
+# -------------------------
+# Skill matching
+# -------------------------
+
+@app.get("/match/{country}/{skill}")
+def match_skill(country: str, skill: str):
+
+    matching_jobs = []
+
+    for job in jobs:
+
+        if job["country"].lower() == country.lower():
+
+            if any(skill.lower() == s.lower()
+                   for s in job["skills"]):
+
+                matching_jobs.append(job)
+
+    return {
+        "country": country,
+        "skill": skill,
+        "matching_jobs": matching_jobs
+    }
