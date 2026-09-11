@@ -1,0 +1,793 @@
+[
+  {
+    "job_id": "140825021551",
+    "title": "Data science engineer",
+    "role": "Data Scientist",
+    "country": "India",
+    "skills": []
+  },
+  {
+    "job_id": "260925920063",
+    "title": "Data Scientist",
+    "role": "Data Scientist",
+    "country": "India",
+    "skills": [
+      "Azure",
+      "Machine Learning"
+    ]
+  },
+  {
+    "job_id": "110825018052",
+    "title": "Senior Data Scientist",
+    "role": "Data Scientist",
+    "country": "India",
+    "skills": [
+      "API",
+      "AWS",
+      "BigQuery",
+      "Deep Learning",
+      "GCP",
+      "LLM",
+      "Machine Learning",
+      "Python",
+      "SQL"
+    ]
+  },
+  {
+    "job_id": "120925013379",
+    "title": "Data Science Engineer",
+    "role": "Data Scientist",
+    "country": "India",
+    "skills": [
+      "Azure",
+      "Generative AI",
+      "LLM",
+      "LangChain",
+      "NLP",
+      "Python"
+    ]
+  },
+  {
+    "job_id": "240925932441",
+    "title": "Data Science Manager",
+    "role": "Data Scientist",
+    "country": "India",
+    "skills": [
+      "Machine Learning"
+    ]
+  },
+  {
+    "job_id": "210825035034",
+    "title": "Engineering Manager",
+    "role": "Data Scientist",
+    "country": "India",
+    "skills": [
+      "AWS",
+      "Airflow",
+      "Apache Spark",
+      "BigQuery",
+      "Docker",
+      "Kafka",
+      "Kubernetes",
+      "PySpark",
+      "Redshift",
+      "SQL",
+      "Scala",
+      "Snowflake"
+    ]
+  },
+  {
+    "job_id": "260925923340",
+    "title": "Java Developer with React",
+    "role": "Software Engineer",
+    "country": "India",
+    "skills": [
+      "Azure",
+      "DevOps",
+      "Docker",
+      "Java",
+      "Kubernetes",
+      "REST API",
+      "React",
+      "SQL",
+      "Spring",
+      "Spring Boot"
+    ]
+  },
+  {
+    "job_id": "240925019956",
+    "title": "Senior .NET Full Stack Developer",
+    "role": "Software Engineer",
+    "country": "India",
+    "skills": [
+      ".NET"
+    ]
+  },
+  {
+    "job_id": "290925013316",
+    "title": "Lead Dot NET Angular Developer /Remote/ Immediate/25 LPA Max",
+    "role": "Software Engineer",
+    "country": "India",
+    "skills": [
+      ".NET",
+      "API",
+      "ASP.NET",
+      "AWS",
+      "Agile",
+      "Angular",
+      "Azure",
+      "C#",
+      "CSS",
+      "DevOps",
+      "Git",
+      "GitHub",
+      "HTML",
+      "MVC",
+      "Microservices",
+      "REST API",
+      "SQL",
+      "Scrum",
+      "TypeScript"
+    ]
+  },
+  {
+    "job_id": "250925007375",
+    "title": "ETL Informatica Developer-C2H-Noida",
+    "role": "Software Engineer",
+    "country": "India",
+    "skills": []
+  },
+  {
+    "job_id": "230925023370",
+    "title": "Content Writing - Assessment",
+    "role": "Software Engineer",
+    "country": "India",
+    "skills": []
+  },
+  {
+    "job_id": "230925930209",
+    "title": "Java Full Stack Developer",
+    "role": "Software Engineer",
+    "country": "India",
+    "skills": [
+      "CSS",
+      "Git",
+      "Hibernate",
+      "JUnit",
+      "Java",
+      "Jenkins",
+      "MVC",
+      "React",
+      "SQL",
+      "Spring",
+      "Spring Boot",
+      "jQuery"
+    ]
+  },
+  {
+    "job_id": "21025006831",
+    "title": "AI/ML Engineer (Backend Systems)",
+    "role": "AI/ML Engineer",
+    "country": "India",
+    "skills": [
+      "Hugging Face",
+      "Machine Learning",
+      "PyTorch",
+      "Python",
+      "TensorFlow"
+    ]
+  },
+  {
+    "job_id": "90923004788",
+    "title": "Generative AI Engineer",
+    "role": "AI/ML Engineer",
+    "country": "India",
+    "skills": [
+      "Generative AI",
+      "LLM"
+    ]
+  },
+  {
+    "job_id": "260925017257",
+    "title": "Support Engineer",
+    "role": "AI/ML Engineer",
+    "country": "India",
+    "skills": [
+      "AWS",
+      "Azure",
+      "GCP",
+      "Generative AI",
+      "Hugging Face",
+      "LLM",
+      "LangChain",
+      "NoSQL",
+      "Node.js",
+      "Python",
+      "REST API",
+      "SQL"
+    ]
+  },
+  {
+    "job_id": "250925020769",
+    "title": "Artificial Intelligence Engineer",
+    "role": "AI/ML Engineer",
+    "country": "India",
+    "skills": [
+      "Generative AI",
+      "LLM",
+      "Machine Learning"
+    ]
+  },
+  {
+    "job_id": "11025013513",
+    "title": "Senior Analyst",
+    "role": "AI/ML Engineer",
+    "country": "India",
+    "skills": [
+      "Excel",
+      "Generative AI"
+    ]
+  },
+  {
+    "job_id": "220925029383",
+    "title": "Artificial Intelligence Engineer",
+    "role": "AI/ML Engineer",
+    "country": "India",
+    "skills": [
+      "Deep Learning",
+      "Machine Learning",
+      "MongoDB",
+      "MySQL",
+      "PostgreSQL",
+      "PyTorch",
+      "Python",
+      "TensorFlow"
+    ]
+  },
+  {
+    "job_id": "290925008512",
+    "title": "Senior Risk Analyst",
+    "role": "Data Analyst",
+    "country": "India",
+    "skills": []
+  },
+  {
+    "job_id": "21025009020",
+    "title": "Business Analyst",
+    "role": "Data Analyst",
+    "country": "India",
+    "skills": []
+  },
+  {
+    "job_id": "290925014123",
+    "title": "Business Analyst",
+    "role": "Data Analyst",
+    "country": "India",
+    "skills": []
+  },
+  {
+    "job_id": "240925030207",
+    "title": "Qlik Analyst",
+    "role": "Data Analyst",
+    "country": "India",
+    "skills": [
+      "Agile",
+      "ETL",
+      "GCP",
+      "Python",
+      "SQL",
+      "Scikit-learn",
+      "TensorFlow"
+    ]
+  },
+  {
+    "job_id": "11025018595",
+    "title": "Business Analyst (IT & Data)",
+    "role": "Data Analyst",
+    "country": "India",
+    "skills": [
+      "Figma",
+      "SQL"
+    ]
+  },
+  {
+    "job_id": "11025917971",
+    "title": "Business Development Manager",
+    "role": "Data Analyst",
+    "country": "India",
+    "skills": []
+  },
+  {
+    "job_id": "100625014684",
+    "title": "Senior Soc Analyst",
+    "role": "Cybersecurity",
+    "country": "India",
+    "skills": []
+  },
+  {
+    "job_id": "290925010743",
+    "title": "CREST Certified Penetration Testers",
+    "role": "Cybersecurity",
+    "country": "India",
+    "skills": []
+  },
+  {
+    "job_id": "240925010410",
+    "title": "OT Security Lead Engineer",
+    "role": "Cybersecurity",
+    "country": "India",
+    "skills": []
+  },
+  {
+    "job_id": "20224008081",
+    "title": "Assistant Manager - Siemens / Rockwell PLC Programming",
+    "role": "Cybersecurity",
+    "country": "India",
+    "skills": []
+  },
+  {
+    "job_id": "240925011280",
+    "title": "PLM Engineer",
+    "role": "Cybersecurity",
+    "country": "India",
+    "skills": []
+  },
+  {
+    "job_id": "240925028275",
+    "title": "Manufacturing Technician",
+    "role": "Cybersecurity",
+    "country": "India",
+    "skills": []
+  },
+  {
+    "job_id": "230925929758",
+    "title": "Data Engineer",
+    "role": "Cloud Engineer",
+    "country": "India",
+    "skills": [
+      "Agile",
+      "Airflow",
+      "Ansible",
+      "Apache Spark",
+      "DevOps",
+      "ETL",
+      "GCP",
+      "Git",
+      "GitHub",
+      "Hadoop",
+      "Hive",
+      "Java",
+      "Jenkins",
+      "Jira",
+      "Linux",
+      "PySpark",
+      "Python",
+      "REST API",
+      "SQL",
+      "Scala",
+      "Scrum",
+      "Unix"
+    ]
+  },
+  {
+    "job_id": "31025002223",
+    "title": "Finops",
+    "role": "Cloud Engineer",
+    "country": "India",
+    "skills": [
+      "AWS",
+      "Agile",
+      "DevOps",
+      "Power BI",
+      "Scrum"
+    ]
+  },
+  {
+    "job_id": "230925929745",
+    "title": "Data Engineer",
+    "role": "Cloud Engineer",
+    "country": "India",
+    "skills": [
+      "Agile",
+      "Airflow",
+      "Ansible",
+      "Apache Spark",
+      "DevOps",
+      "ETL",
+      "GCP",
+      "Git",
+      "GitHub",
+      "Hadoop",
+      "Hive",
+      "Java",
+      "Jenkins",
+      "Jira",
+      "Linux",
+      "PySpark",
+      "Python",
+      "REST API",
+      "SQL",
+      "Scala",
+      "Scrum",
+      "Unix"
+    ]
+  },
+  {
+    "job_id": "230925929749",
+    "title": "Data Engineer",
+    "role": "Cloud Engineer",
+    "country": "India",
+    "skills": [
+      "Agile",
+      "Airflow",
+      "Ansible",
+      "Apache Spark",
+      "DevOps",
+      "ETL",
+      "GCP",
+      "Git",
+      "GitHub",
+      "Hadoop",
+      "Hive",
+      "Java",
+      "Jenkins",
+      "Jira",
+      "Linux",
+      "PySpark",
+      "Python",
+      "REST API",
+      "SQL",
+      "Scala",
+      "Scrum",
+      "Unix"
+    ]
+  },
+  {
+    "job_id": "270925000215",
+    "title": "Sr. Engineer - SOAR",
+    "role": "Cloud Engineer",
+    "country": "India",
+    "skills": [
+      "REST API"
+    ]
+  },
+  {
+    "job_id": "270925011324",
+    "title": "Deployment & Release Operations Analyst",
+    "role": "Cloud Engineer",
+    "country": "India",
+    "skills": [
+      "Agile",
+      "Azure",
+      "DevOps",
+      "Power BI",
+      "Scrum"
+    ]
+  },
+  {
+    "job_id": "75832982",
+    "title": "Actuarial Analyst, Pricing Dept",
+    "role": null,
+    "country": "Malaysia",
+    "skills": [
+      "Excel",
+      "Python"
+    ]
+  },
+  {
+    "job_id": "74215694",
+    "title": "Master Data Administrator",
+    "role": null,
+    "country": "Malaysia",
+    "skills": []
+  },
+  {
+    "job_id": "74480313",
+    "title": "FP&A - Assistant Manager (Chocolate)",
+    "role": null,
+    "country": "Malaysia",
+    "skills": [
+      "Excel",
+      "Power BI",
+      "SAP"
+    ]
+  },
+  {
+    "job_id": "75592159",
+    "title": "Data Scientist",
+    "role": null,
+    "country": "Malaysia",
+    "skills": [
+      "C++",
+      "Excel",
+      "Java",
+      "Python"
+    ]
+  },
+  {
+    "job_id": "76405053",
+    "title": "Data Scientist",
+    "role": null,
+    "country": "Malaysia",
+    "skills": [
+      "C++",
+      "Computer Vision",
+      "Deep Learning",
+      "Machine Learning",
+      "NLP",
+      "Python"
+    ]
+  },
+  {
+    "job_id": "74924622",
+    "title": "Data Scientist",
+    "role": null,
+    "country": "Malaysia",
+    "skills": [
+      "AWS",
+      "Agile",
+      "Azure",
+      "GCP",
+      "Machine Learning",
+      "Power BI",
+      "Python",
+      "SQL",
+      "Tableau"
+    ]
+  },
+  {
+    "job_id": "75356141",
+    "title": "Head of Policy Development Department",
+    "role": null,
+    "country": "Malaysia",
+    "skills": []
+  },
+  {
+    "job_id": "74557421",
+    "title": "Business Analytics, Subject Matter Expert",
+    "role": null,
+    "country": "Malaysia",
+    "skills": [
+      "Excel",
+      "Machine Learning",
+      "Power BI",
+      "Tableau"
+    ]
+  },
+  {
+    "job_id": "74055344",
+    "title": "Senior Machine Learning Engineer",
+    "role": null,
+    "country": "Malaysia",
+    "skills": [
+      "Airflow",
+      "Computer Vision",
+      "Deep Learning",
+      "Docker",
+      "FastAPI",
+      "Git",
+      "Java",
+      "Linux",
+      "Machine Learning",
+      "NLP",
+      "OpenCV",
+      "PostgreSQL",
+      "PyTorch",
+      "Python",
+      "TensorFlow"
+    ]
+  },
+  {
+    "job_id": "74953948",
+    "title": "Financial Planning and Analysis (FP&A) Analyst",
+    "role": null,
+    "country": "Malaysia",
+    "skills": [
+      "Go",
+      "Machine Learning"
+    ]
+  },
+  {
+    "job_id": "74678812",
+    "title": "Internship of AI Engineer",
+    "role": null,
+    "country": "Malaysia",
+    "skills": [
+      "Agile"
+    ]
+  },
+  {
+    "job_id": "74611961",
+    "title": "Lead Artificial Intelligence Specialist",
+    "role": null,
+    "country": "Malaysia",
+    "skills": [
+      "API",
+      "AWS",
+      "Apache Spark",
+      "Azure",
+      "Computer Vision",
+      "Deep Learning",
+      "GCP",
+      "Hadoop",
+      "Java",
+      "Machine Learning",
+      "NLP",
+      "PyTorch",
+      "Python",
+      "TensorFlow"
+    ]
+  },
+  {
+    "job_id": "74273958",
+    "title": "IT BA SAP Business By Design",
+    "role": null,
+    "country": "Malaysia",
+    "skills": [
+      "SAP"
+    ]
+  },
+  {
+    "job_id": "74642982",
+    "title": "Senior Financial Analyst - Investment Management (APAC)",
+    "role": null,
+    "country": "Malaysia",
+    "skills": []
+  },
+  {
+    "job_id": "74407559",
+    "title": "Sale Analyst / Data Analyst",
+    "role": null,
+    "country": "Malaysia",
+    "skills": [
+      "Excel",
+      "SQL"
+    ]
+  },
+  {
+    "job_id": "74995461",
+    "title": "R&D Assistant Manager / Senior Executive",
+    "role": null,
+    "country": "Malaysia",
+    "skills": []
+  },
+  {
+    "job_id": "74225598",
+    "title": "Strategy Consultant",
+    "role": null,
+    "country": "Malaysia",
+    "skills": []
+  },
+  {
+    "job_id": "74988224",
+    "title": "Leasing Executive",
+    "role": null,
+    "country": "Malaysia",
+    "skills": []
+  },
+  {
+    "job_id": "74939067",
+    "title": "Security Analyst (L2)",
+    "role": null,
+    "country": "Malaysia",
+    "skills": []
+  },
+  {
+    "job_id": "73995233",
+    "title": "Perimeter Security Engineer",
+    "role": null,
+    "country": "Malaysia",
+    "skills": []
+  },
+  {
+    "job_id": "74033740",
+    "title": "MANAGER, CYBER RECOVERY & SERVICE DELIVERY",
+    "role": null,
+    "country": "Malaysia",
+    "skills": []
+  },
+  {
+    "job_id": "74408960",
+    "title": "Cybersecurity Engineer",
+    "role": null,
+    "country": "Malaysia",
+    "skills": []
+  },
+  {
+    "job_id": "73856930",
+    "title": "Cybersecurity Intern",
+    "role": null,
+    "country": "Malaysia",
+    "skills": []
+  },
+  {
+    "job_id": "75422762",
+    "title": "SYSTEM ADMINISTRATOR (REF: DL)",
+    "role": null,
+    "country": "Malaysia",
+    "skills": [
+      "AWS",
+      "Azure"
+    ]
+  },
+  {
+    "job_id": "74457851",
+    "title": "Customer Solutions Consultant, Infrastructure Modernization",
+    "role": null,
+    "country": "Malaysia",
+    "skills": [
+      "Ansible",
+      "Docker",
+      "GCP",
+      "Java",
+      "Kubernetes",
+      "Linux",
+      "Microservices",
+      "Python"
+    ]
+  },
+  {
+    "job_id": "74458645",
+    "title": "HERBALIFE Principal I, Mobile position - NEEDED ASAP!!",
+    "role": null,
+    "country": "Malaysia",
+    "skills": [
+      "Agile",
+      "Azure",
+      "DevOps",
+      "GCP",
+      "Java",
+      "JavaScript",
+      "Kotlin",
+      "React",
+      "Swift",
+      "TypeScript"
+    ]
+  },
+  {
+    "job_id": "74340036",
+    "title": "IT Executive",
+    "role": null,
+    "country": "Malaysia",
+    "skills": [
+      "Azure",
+      "Power BI"
+    ]
+  },
+  {
+    "job_id": "74376430",
+    "title": "Cloud Architect",
+    "role": null,
+    "country": "Malaysia",
+    "skills": [
+      "API",
+      "GCP",
+      "Kubernetes",
+      "Microservices"
+    ]
+  },
+  {
+    "job_id": "76288951",
+    "title": "Odoo Specialist (2-3 days / Week WFH)",
+    "role": null,
+    "country": "Malaysia",
+    "skills": [
+      "AWS",
+      "CSS",
+      "HTML",
+      "JavaScript",
+      "Odoo",
+      "PostgreSQL",
+      "Python"
+    ]
+  },
+  {
+    "job_id": "72343721",
+    "title": "Senior Consultant \u2013 Identity and Access Management",
+    "role": null,
+    "country": "Malaysia",
+    "skills": [
+      "Azure"
+    ]
+  }
+]
