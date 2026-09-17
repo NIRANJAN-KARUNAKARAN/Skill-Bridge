@@ -1,0 +1,18 @@
+India column,Filled from Malaysia file
+jobId,job_id
+title,job_title
+companyName,company
+location,location
+experience,Extracted from descriptions (explicit only)
+minimumExperience,Extracted from descriptions (explicit only)
+maximumExperience,Extracted from descriptions (explicit only)
+minimumSalary,Parsed from salary
+maximumSalary,Parsed from salary
+salary,salary
+currency,RM → MYR
+jobUploaded,listingDate
+jobDescription,descriptions
+tagsAndSkills,category + subcategory + role + type
+companyId,Not available in source
+ReviewsCount,Not available in source
+AggregateRating,Not available in source
