@@ -19,10 +19,10 @@ skill-gap score with job/skill recommendations.
 2. TECH STACK
 --------------------------------------------------------------------------
  
-Backend      : Python (Flask / FastAPI / Django - specify which one)
-Frontend     : (fill in - e.g. React, Vue, plain HTML/JS)
-Database     : (fill in - e.g. PostgreSQL, MySQL, SQLite, MongoDB)
-Hosting      : (fill in - e.g. Render, Vercel, Railway, AWS)
+Backend      : Python ( FastAPI )
+Frontend     : (React, HTML/JS)
+Database     : (PostgreSQL, MySQL)
+Hosting      : (Render)
  
 --------------------------------------------------------------------------
 3. PREREQUISITES
