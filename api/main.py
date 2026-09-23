@@ -1,3 +1,4 @@
+import re
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import Optional
@@ -12,7 +13,7 @@ app = FastAPI(
 )
 
 
-# ============================================================
+# ==================================S==========================
 # REQUEST MODELS
 # ============================================================
 
@@ -35,7 +36,7 @@ def home():
 
 @app.get("/health")
 def health_check():
-
+ 
     try:
         db = get_db_connection()
         cursor = db.cursor()
@@ -102,6 +103,8 @@ def get_skills():
         )
 
         skills = cursor.fetchall()
+        print("SKILLS FROM DB:", skills)
+          
 
         cursor.close()
         db.close()
@@ -269,8 +272,10 @@ def extract_skills(job: JobInput):
 
             skill = row[0]
 
-            if skill and skill.lower() in description:
-
+            if skill and re.search(
+                r"\b" + re.escape(skill.lower()) + r"\b",
+                description
+            ):
                 detected_skills.append(skill)
 
         # Remove duplicates
@@ -318,14 +323,14 @@ def match_skill(job: JobInput):
         detected_skill_names = []
 
         for skill in skills:
+         skill_name = skill["skill_name"]
 
-            skill_name = skill["skill_name"]
-
-            if skill_name and skill_name.lower() in description:
-
-                detected_skill_ids.append(skill["skill_id"])
-                detected_skill_names.append(skill_name)
-
+        if skill_name and re.search(
+           r"\b" + re.escape(skill_name.lower()) + r"\b",
+          description
+        ):
+           detected_skill_ids.append(skill["skill_id"])
+           detected_skill_names.append(skill_name)
         # ----------------------------------------------------
         # STEP 2: If no skills found
         # ----------------------------------------------------
@@ -412,4 +417,75 @@ def match_skill(job: JobInput):
         raise HTTPException(
             status_code=500,
             detail=f"Job matching failed: {str(e)}"
+        )
+    # ============================================================
+# CHALLENGE 6 - ADVERSARIAL DECISION TEST
+# ============================================================
+
+class AdversarialCase(BaseModel):
+    case_id: str
+    description: str
+    expected_skills: list[str]
+    severity: str = "medium"
+
+
+@app.post("/challenge6/adversarial-test")
+def challenge6_test(case: AdversarialCase):
+
+    description = case.description.lower()
+
+    try:
+        db = get_db_connection()
+        cursor = db.cursor(dictionary=True)
+
+        cursor.execute(
+            "SELECT skill_id, skill_name FROM skills"
+        )
+
+        skills = cursor.fetchall()
+
+        detected_skills = []
+
+        for skill in skills:
+            skill_name = skill["skill_name"].strip()
+
+        if skill_name and re.search(
+                r"\b" + re.escape(skill_name.lower()) + r"\b",
+                description
+              ):
+                detected_skills.append(skill_name)
+
+        cursor.close()
+        db.close()
+                  
+        expected = set(
+            skill.lower()
+            for skill in case.expected_skills
+        )
+
+        observed = set(
+            skill.lower()
+            for skill in detected_skills
+        )
+
+        unexpected = list(observed - expected)
+        missing = list(expected - observed)
+
+        passed = len(unexpected) == 0 and len(missing) == 0
+
+        return {
+            "case_id": case.case_id,
+            "status": "PASS" if passed else "FAIL",
+            "input": case.description,
+            "expected_skills": case.expected_skills,
+            "observed_skills": detected_skills,
+            "unexpected_skills": unexpected,
+            "missing_skills": missing,
+            "severity": case.severity
+        }
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Challenge 6 test failed: {str(e)}"
         )
